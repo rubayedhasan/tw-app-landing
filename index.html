@@ -38,14 +38,16 @@
         <!-- navigation section  -->
         <nav class="text-white flex justify-between items-center py-10">
           <!-- logo & navbar section  -->
-          <div>
+          <div class="navbar-container">
             <div class="flex items-center gap-8">
-              <div>
+              <!-- logo unit  -->
+              <div class="brand-logo">
                 <a href="">
                   <img src="images/logo-3.png" alt="logo" />
                 </a>
               </div>
-              <ul class="flex space-x-8">
+              <!-- navigation unit  -->
+              <ul class="navigation hidden lg:flex space-x-8">
                 <li><a class="text-lg font-semibold" href="">Home</a></li>
                 <li><a class="text-lg font-semibold" href="">About</a></li>
                 <li><a class="text-lg font-semibold" href="">services</a></li>
@@ -56,7 +58,7 @@
           </div>
 
           <!-- login button  -->
-          <div class="space-x-10">
+          <div class="get-start-btn space-x-10 hidden lg:block">
             <button type="button" class="font-medium text-lg">Login</button>
             <button
               type="button"
@@ -64,6 +66,25 @@
             >
               Get Started
             </button>
+          </div>
+
+          <!-- hamburger for sm devices  -->
+          <div class="hamburger lg:hidden p-3 group relative">
+            <img src="images/more.png" alt="hamburger" class="w-10 h-10" />
+
+            <!-- hamburger-navigation unit -->
+            <ul
+              class="hamburger-navigation hidden group-hover:flex flex-col justify-center items-center space-y-2.5 bg-[#0E1133] px-10 py-5 rounded absolute top-24 right-1"
+            >
+              <li><a class="text-base font-semibold" href="">Home</a></li>
+              <li><a class="text-base font-semibold" href="">About</a></li>
+              <li><a class="text-base font-semibold" href="">services</a></li>
+              <li><a class="text-base font-semibold" href="">Blog</a></li>
+              <li><a class="text-base font-semibold" href="">Contact</a></li>
+              <li>
+                <button type="button" class="font-medium text-lg">Login</button>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
