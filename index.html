@@ -33,10 +33,10 @@
   </head>
   <body>
     <!-- header section  -->
-    <header class="bg-[#0E1133] py-10">
+    <header class="bg-[#0E1133]">
       <div class="container mx-auto px-8 lg:px-10">
         <!-- navigation section  -->
-        <nav class="text-white flex justify-between items-center">
+        <nav class="text-white flex justify-between items-center py-5 lg:py-8">
           <!-- logo & navbar section  -->
           <div class="navbar-container">
             <div class="flex items-center gap-8">
@@ -74,7 +74,7 @@
 
             <!-- hamburger-navigation unit -->
             <ul
-              class="hamburger-navigation hidden group-hover:flex flex-col justify-center items-center space-y-2.5 bg-[#0E1133] px-10 py-5 rounded absolute top-24 right-1"
+              class="hamburger-navigation hidden group-hover:flex flex-col justify-center items-center space-y-2.5 bg-[#0E1133] px-10 py-5 rounded absolute top-20 right-0"
             >
               <li><a class="text-base font-semibold" href="">Home</a></li>
               <li><a class="text-base font-semibold" href="">About</a></li>
@@ -95,18 +95,20 @@
       <!-- banner section  -->
       <section id="banner" class="bg-[#12174E]">
         <div
-          class="banner-container container mx-auto px-8 lg:px-10 flex flex-col items-center justify-center pt-28"
+          class="banner-container container mx-auto px-8 lg:px-10 flex flex-col items-center justify-center py-20 lg:py-0 lg:pt-28"
         >
           <div class="banner-description-container">
             <!-- banner title  -->
-            <h1 class="banner-title text-center text-white text-7xl font-bold">
+            <h1
+              class="banner-title text-center text-white md:text-5xl lg:text-7xl font-bold"
+            >
               Creative way to <br />
               Showcase your
               <span class="text-red-600">App</span>
             </h1>
             <!-- banner-description  -->
             <p
-              class="banner-dexcription text-white opacity-70 w-9/12 mx-auto text-center my-8"
+              class="banner-dexcription text-white opacity-70 w-10/12 lg:w-9/12 mx-auto text-center my-8 text-sm md:text-base lg:text-lg"
             >
               Welcome to our App Landing Page! Discover the gateway to seamless
               experiences with our innovative app. Designed with simplicity and
@@ -114,19 +116,15 @@
               you're managing tasks, staying connected, or unleashing your
               creativity, our app is your all-in-one solution. Experience smooth
               navigation and intuitive design as you explore the features
-              tailored to enhance your daily life. From organizing schedules to
-              unlocking new possibilities, our app empowers you to achieve more
-              with ease. Join thousands of satisfied users who have embraced the
-              future of efficiency. Download now and embark on a journey of
-              productivity and empowerment with our app.
+              tailored to enhance your daily life.
             </p>
             <!-- banner button   -->
             <div
-              class="banner-button flex justify-center items-center gap-5 text-white"
+              class="banner-button flex flex-col lg:flex-row justify-center items-center gap-5 text-white"
             >
               <button
                 type="button"
-                class="font-medium text-lg bg-orange-600 rounded-md px-5 py-3 border border-orange-600 hover:bg-transparent duration-300"
+                class="font-semibold text-lg bg-orange-600 rounded-md px-5 py-3 border border-orange-600 hover:bg-transparent duration-300"
               >
                 Get a Quote
               </button>
@@ -134,14 +132,16 @@
                 <img
                   src="images/play-button.png"
                   alt="play-button"
-                  class="inline mr-2.5"
+                  class="inline mr-2.5 font-semibold text-lg"
                 />
                 Play Video
               </button>
             </div>
           </div>
           <!-- banner image  -->
-          <div class="banner-image translate-y-48">
+          <div
+            class="banner-image hidden md:block md:translate-y-36 lg:translate-y-48"
+          >
             <img src="images/hero-thumb-4.png" alt="mobile" class="" />
           </div>
         </div>
